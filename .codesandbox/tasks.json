@@ -3,36 +3,26 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "yarn install"
+      "command": "npm install"
     }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "dev": {
-      "name": "dev",
+      "name": "Start Dev Server",
       "command": "yarn dev",
       "runAtStart": true
     },
     "build": {
-      "name": "build",
+      "name": "Build",
       "command": "yarn build",
       "runAtStart": false
     },
-    "start": {
-      "name": "start",
-      "command": "yarn start",
-      "runAtStart": false
-    },
-    "preview": {
-      "name": "preview",
-      "command": "yarn preview",
-      "runAtStart": false
-    },
-    "preview": {
-      "name": "astro",
-      "command": "yarn astro",
-      "runAtStart": false
+    "install": {
+      "name": "Install Dependencies",
+      "command": "npm install",
+      "restartOn": { "files": ["yarn.lock"] }
     }
   }
 }
