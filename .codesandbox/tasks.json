@@ -22,7 +22,7 @@
     "install": {
       "name": "Install Dependencies",
       "command": "npm install",
-      "restartOn": { "files": ["yarn.lock"] }
+      "restartOn": { "files": ["package-lock.json"] }
     }
   }
 }
